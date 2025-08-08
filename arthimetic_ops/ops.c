@@ -100,4 +100,9 @@ int main(void)
     j = 3 * i-- + 2;
     printf("%d %d", i, j);
     printf("\n");
+
+    i = 7;
+    j = 3 + --i * 2;
+    printf("%d %d", i, j);
+    printf("\n");
 }
