@@ -7,6 +7,10 @@ int main(void)
     } else {
         printf("nonono!");
     }
+    // using conditional operator
+    int i = 2;
+    int j = 3;
+    printf("%d\n", (i > j) ? i : j);
 
     if (1) {
         printf("{ Not hello\n");
@@ -23,7 +27,9 @@ int main(void)
         printf("1 == 2");
 
 
-    // conditional operator
+    // conditional operator : allows an expression to produce one of two values depending on the value of a condition.
+    // this ( ? and : ) operator is not unary operator nor binary operator but ternary operator: bcz it needs three operands
+    // expr1 ? expr2 : expr3 => if expr1 then (produce value of) expr2 else exrp3.
     int a = (1 > 2) ? 1 : 2;
     printf("%d\n", a);
 
