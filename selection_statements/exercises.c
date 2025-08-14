@@ -123,6 +123,19 @@ int main()
     // }
 
     // activity question #3
+    // dealing with logical expression.
+    i = 7; j = 8; k = 9;
+    printf("%d ", i - 7 && j++ < k);
+    printf("%d %d %d", i, j, k);
+    printf("\n");
 
+    i = 7; j = 8; k = 9;
+    printf("%d ", (i = j) || (j = k));
+    printf("%d %d %d", i, j, k);
+    printf("\n");
 
+    i = 1; j = 1; k = 1;
+    printf("%d ", ++i || ++j && ++k);
+    printf("%d %d %d", i, j, k);
+    printf("\n");
 }
