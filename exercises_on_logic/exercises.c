@@ -144,5 +144,30 @@ int main(void)
     printf("---------------------\n");
 
     printf("\n");
+
+    // last hard challenge for today. (before I take a break)
+    // single expression whose value is either -1 or 0 or +1 depending on whether i is < or = or > j
+    // let's assume
+    // i = 1
+    // j = 0
+    // proposed: (i >= j) - (i < j) - (i == j) -- chatgpt's logic (i > j) - (i < j)
+
+    // test0: when i < j
+    i = 5;
+    j = 9;
+    printf("when: i < j => %d --- ", (i > j) - (i < j));
+    printf("when: i < j => %d\n", (i >= j) - (i < j) - (i == j)); // expected: -1
+
+    // test1: when i eq j
+    i = 5;
+    j = 5;
+    printf("when: i == j => %d --- ", (i > j) - (i < j));
+    printf("when: i == j => %d\n", (i >= j) - (i < j) - (i == j)); //expected: 0
+    // test2: when i > j
+    i = 15;
+    j = 5;
+    printf("when: i > j => %d --- ", (i > j) - (i < j));
+    printf("when: i > j => %d\n", (i >= j) - (i < j) - (i == j));   // expected: +1
+
     return 0;
 }
