@@ -52,7 +52,10 @@ int main(void)
 
     int remainder;
     int count = 0;
-    int num = 1223454;
+    int og_num = 0;
+    printf("Enter a number: ");
+    scanf("%d", &og_num);
+    int num = og_num;
     while(1) {
         if (num == 0) {
             break;
@@ -63,5 +66,6 @@ int main(void)
         }
     }
 
-    printf("count: %d\n", count);
+    // not the best approach but it kinda work -- :)
+    printf("The number %d has %d digits\n", og_num, count);
 }
