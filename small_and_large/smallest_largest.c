@@ -13,7 +13,8 @@ int main(void)
     // Below would be the logic
     // comparing them in groups of two
     //  - and using a ternary ops to determine the ultimate largest or smallest
-    // NOTE: that's most probably 'NOT' the best approach but it works :)
+    // NOTE: that's probably 'NOT' the best approach but it works :)
+    // I will later see how I can refine it (..)
 
     if (n1 > n2 && n3 > n4)
     {
