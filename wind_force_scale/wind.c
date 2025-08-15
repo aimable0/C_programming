@@ -1,11 +1,13 @@
 // Author: N Aimable
 // Purpose: Displays wind force description given user input in knots
+//         -Using the simplified version of the Beaufort scale,
 // Date: 15/08/2025
 
 #include <stdio.h>
 
 int main(void)
 {
+
     int wind_speed = 1;
 
     printf("Enter Wind Speed (in knots): ");
