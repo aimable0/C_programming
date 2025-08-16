@@ -87,6 +87,23 @@ int main(void)
     for (int i = 10, j = 1; i > 0; i--, j++) {
         printf("%2d  %2d\n", i, j);
     }
+    // Did you know: that you can write a for that has misses some and or all expression
+    // for (;;) statement or for(expe1; express2; ) or for(;expr2;)
+
+
+    // null statements
+    // what are they good for
+    // answer: The null statement is primarily good for one thing: writing loops whose bodies are empty.
+    // ex i = 0; ;k = 10; -- the empy space btn ; ; is a null statement
+    // another example:
+    // for (d = 2; d < n && n % d != 0; d++)
+    // /* empty loop body */ ;
+
+    // notice that mistakenly placing a semicolon in place like:
+    // for (); // this is like a for with a null statement hence ending the loop prematurely
+    // {
+        // this code will run probably only once...
+    // }
 
     return 0;
 }
