@@ -52,7 +52,7 @@ int main(void)
 
     // here's how scanf would behave without while
     // scanf("%d", &typed_num); // asume the user gave this  serie of integers number: '1 2 3 4 5'  L>Enter
-    // scanf will only take one number and it will discard the left 2, 3, 4, 5 numbers in hiddern buffer
+    // scanf will only take one number and it leave 2, 3, 4, 5 numbers in to be read by next scanf from the hiddern buffer
     // printf("%d\n", typed_num); //expected: just '1' the first number.
 
     // Here's how scanf behaves when its in while context
@@ -77,12 +77,16 @@ int main(void)
     // }
 
     // using for
-    for (int i = 10; i > 0; i--)
-        printf("T minus %d and counting\n", i);
+    // for (int i = 10; i > 0; i--)
+    //     printf("T minus %d and counting\n", i);
     // conclusion: no effect; they infact exper1 and expre3 in for are useful for their side effects
     // i.e the values they produce when executed are irrelevant. so i++ & ++i have the same side effect in final analysis
 
 
+    // incrementing several variables each time
+    for (int i = 10, j = 1; i > 0; i--, j++) {
+        printf("%2d  %2d\n", i, j);
+    }
 
     return 0;
 }
