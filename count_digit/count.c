@@ -56,15 +56,22 @@ int main(void)
     printf("Enter a number: ");
     scanf("%d", &og_num);
     int num = og_num;
-    while(1) {
-        if (num == 0) {
-            break;
-        } else {
-            remainder = num % 10;
-            num = (num - remainder) / 10;
-            count++;
-        }
-    }
+
+    // while(1) {
+    //     if (num == 0) {
+    //         break;
+    //     } else {
+    //         remainder = num % 10;
+    //         num = (num - remainder) / 10;
+    //         count++;
+    //     }
+    // }
+
+    // using a do. (simplified version)
+    do {
+        num /= 10;
+        count++;
+    } while (num > 0);
 
     // not the best approach but it kinda work -- :)
     printf("The number %d has %d digits\n", og_num, count);

@@ -1,5 +1,6 @@
 // Author: N Aimable
 // Purpose: writes two-digit provided by the user in english words
+// Date: 15/08/2025
 
 #include <stdio.h>
 
