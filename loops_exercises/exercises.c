@@ -120,10 +120,6 @@ int main(void)
     }
     printf("%d\n", sum);
 
-
-    // exercise 12
-
-    printf("\n--------\n");
     // exercise 13
     // Task: Rewrite the following loop so that its body is empty:
     int n, m;
@@ -140,10 +136,26 @@ int main(void)
 
     // exercise 14
     // Task: Find the error in the following program fragment and fix it.
-    if (n % 2 == 0); // the ';' on this line terminates the if and considers it to be an if with null statement body
-        printf("n is even\n");
-        // Error: printf("n is even\n"); should be printf("%d is even\n", n);
+    // if (n % 2 == 0); // the ';' on this line terminates the if and considers it to be an if with null statement body
+        // printf("n is even\n");
+        // optional correction: printf("n is even\n"); 'should probably' be printf("%d is even\n", n);
 
+
+    printf("\n--------\n");
+    // exercise 12 -- to be thought about....
+    int d;
+    n = 7;
+    for (d = 2; d * d < n; d++)
+        printf("%d\n", d);
+        // if (n % d == 0)
+        //     break;
+
+
+    // let's check if the loop ended prematurely
+    if (d < n)
+        printf("n is not a prime\n");
+    else
+        printf("n is a prime\n");
 
     printf("\n-----------\n");
     return 0;
