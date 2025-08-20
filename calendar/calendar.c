@@ -62,4 +62,6 @@ int main(void)
     }
 
     printf("\n------------ END -----------\n\n");
+
+    return 0;
 }
