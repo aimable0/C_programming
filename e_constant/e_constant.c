@@ -1,5 +1,6 @@
-#include <stdio.h>
+/* Write a program that approximates e by computing the value of */
 
+#include <stdio.h>
 
 int main(void)
 {
