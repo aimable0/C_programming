@@ -74,8 +74,6 @@ int main(void)
         // printf("\n");
     }
 
-
-
     printf("%d/%d/%.2d is the earliest date\n", early_m, early_d, early_y);
 
     return 0;
