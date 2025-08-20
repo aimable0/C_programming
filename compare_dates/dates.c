@@ -6,6 +6,8 @@ int main(void)
     // dates like 98 vs 01 would give you something unexpected (for now :)..
     // for better result write '1998' instead of '98' vs 2001 instead of '01'
     // Modified: 20 Aug, 2025 -- to accept more that two dates.
+    // Later I will try to optimize it
+    // and handle similar dates .. gracefully.
 
     // year, month, day
     int y1, m1, d1;
@@ -72,8 +74,7 @@ int main(void)
         // printf("\n");
     }
 
-    // Later I will try to optimize it
-    // and handle similar dates .. gracefully.
+
 
     printf("%d/%d/%.2d is the earliest date\n", early_m, early_d, early_y);
 
