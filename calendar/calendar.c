@@ -31,20 +31,35 @@ int main(void)
 
     // printing Month calendar
     printf("   S   M   T   W   T   F   S\n");
-    for (int i = 1, day = 2 - starting_day; i <= month_days + (starting_day - 1); i++, day++) {
 
+    // Version 1
+    // for (int i = 1, day = 2 - starting_day; i <= month_days + (starting_day - 1); i++, day++) {
+
+    //     if (i < starting_day) {
+    //         printf("    ");
+    //     }
+    //     else {
+    //         printf("%4d", day);
+    //     }
+
+    //     if (i % 7 == 0) {
+    //         printf("\n");
+    //     }
+    // }
+
+
+    // version 2
+    for (int i = 1; i < month_days + starting_day; i++) {
         if (i < starting_day) {
             printf("    ");
-        }
-        else {
-            printf("%4d", day);
+        } else {
+            printf("%4d", i - (starting_day - 1));
         }
 
         if (i % 7 == 0) {
             printf("\n");
         }
     }
-
 
     printf("\n------------ END -----------\n\n");
 }
