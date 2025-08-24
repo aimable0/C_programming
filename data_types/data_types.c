@@ -13,10 +13,10 @@ int main(void)
     long long int long_long_m; // NEW IN C99
 
     // Results here are for 32-bit int (which is common nowadays)
-    printf("normal - m size: %lu bytes\n", sizeof(m));      // expected: 4 (bytes) -- (this can store a value up to 2b(signed) or 4b (unsigned))
-    printf("long - m size: %lu bytes\n", sizeof(long_m));   // expected: 8 (bytes useful when we need to store larger numbers. + we may even make them unsigned to get more space..
-    printf("short - m size: %lu bytes\n", sizeof(short_m)); // expected: 2 (bytes) -- useful when we need to conserver memory .. (stores upt to -/+32k or 65k (unsigned))
-    printf("long long - m size: %lu bytes\n", sizeof(long_long_m)); // got 8bytes .. it's atleast 64 bits wide.
+    printf("normal - m size: %lu bytes\n", sizeof(m));      // expected: 4 (bytes - 32-bits) -- (this can store a value up to 2b(signed) or 4b (unsigned))
+    printf("long - m size: %lu bytes\n", sizeof(long_m));   // expected: 8 (bytes 64-bits) useful when we need to store larger numbers. + we may even make them unsigned to get more space..
+    printf("short - m size: %lu bytes\n", sizeof(short_m)); // expected: 2 (bytes - 16-bit) -- useful when we need to conserver memory .. (stores upt to -/+32k or 65k (unsigned))
+    printf("long long - m size: %lu bytes\n", sizeof(long_long_m)); // got 8bytes .. it's atleast 64 bits wide. but expected to be larger than long.
 
     // Standard signed integer types in c99
         // - short, int, long int and (plus char type)
@@ -87,7 +87,7 @@ int main(void)
 
     //  READING AND WRITNG INTEGERS
 
-    //  NOTE: %d means signed integer and %u means unsigned integer.
+    //!\  NOTE: %d means signed integer (d for decimal) and %u means unsigned integer.
 
     // 	%i means “integer, auto-detect base”.
 	// •	If the input starts with 0 → it’s treated as octal.
@@ -95,7 +95,7 @@ int main(void)
 	// •	Otherwise, it’s decimal.
 
     // unsigned integers.
-    // format specifier: 'u':
+    // format specifier: '%u':
     // unsigned int u;
     //  - decimal
         // printf("unsigned decimal: ");

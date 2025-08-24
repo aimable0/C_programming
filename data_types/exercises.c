@@ -1,8 +1,16 @@
-// program that determines the lenght of a message
+/* Determines the length of a message */
 
 #include <stdio.h>
-#define getchar() getc(stdin)  // let's try defining a macro
+#define getchar() getc(stdin) // let's try defining a macro
 
-int main(void) {
-    
+int main(void)
+{
+    int len = 0;
+
+    printf("Enter a message: ");
+    while (getchar() != '\n')
+        len++;
+    printf("Your message was %d character(s) long.\n", len);
+
+    return 0;
 }
