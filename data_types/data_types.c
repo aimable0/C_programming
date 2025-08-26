@@ -100,8 +100,8 @@ int main(void)
     //  - decimal
         // printf("unsigned decimal: ");
         // scanf("%u", &u);    // reads u in base 10
-        // // something like scanf("%d", &u) could end up in undefined behaviour which can easily go unnotices since gcc is pretty lenient ..
-        // // and doesn't spot those type mismatch ..
+        // something like scanf("%d", &u) could end up in undefined behaviour which can easily go unnotices since gcc is pretty lenient ..
+        // and doesn't spot those type mismatch ..
         // printf("unsigned: %u\n", u);    // writes u in base 10
 
     //  - octal
@@ -121,7 +121,7 @@ int main(void)
     // - decimal
         // printf("enter short int: ");
         // scanf("%hd", &s); // hd means short and signed integer.
-        // // scanf("%hu", &s); // hu means short and unsigned integer.
+        // scanf("%hu", &s); // hu means short and unsigned integer.
         // printf("short: %hd\n", s);
 
     // - octal
@@ -177,6 +177,35 @@ int main(void)
     // scanf("%Lf", &ld);
     // printf("%Lf", ld); //!\ NOTICE: however that we must use Lf to write the long doulbe using "%Lf" in printf string... using %f would be treating it as a float or double.
 
+
+    // printing ordinary (signed) integers in octal or hex?
+    int o = 010;
+    int x = 0x1A;
+
+    // %i: integer auto detect would display them in their euqivalent deciamls.
+    printf("octal: %i\n", o);
+    printf("hex: %i\n", x);
+    printf("-----------\n");
+
+    // %o and %x would probably serve the purpose to print octal and hex in ordinary (signed) way as long as the number is positive.
+    // if it's negative you get an unexpectedly large number.
+    //!\ there's no direct way to print a negative number in octal or hex.
+    printf("octal: %o\n", o);
+    printf("hex: %x\n", x);
+
+    printf("-----------\n");
+
+    // printing a neg number
+    int neg_o = -010;
+    int neg_x = -0x1a;
+    printf("octal: -%o\n", -neg_o); // you get a very large octal number 
+    printf("octal: %d\n", neg_o); // this gives you -8 which is the equivalent negative decimal.
+    printf("hex: -%x\n", -neg_x); // you get a very large hex number 
+
+
+    // carriage return usage
+    printf("Hello");
+    printf(" Aimable\rY\n");
 
     printf("\n");
     return 0;
