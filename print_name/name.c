@@ -1,3 +1,6 @@
+/* Program: program that takes a first name and last name entered by the user
+   and displays the last name, a comma, and the first initial, followed by a period. */
+
 #include <stdio.h>
 #include <ctype.h>
 
@@ -7,11 +10,8 @@ int main(void)
     char ch;
     short i = 0;
     char first_char;
-    // we want to use carriage return and exit..
     short second_name_len = 0;
     short first_name_len = 0;
-
-    // to avoid extraspace.. at the beginning 
 
     while((ch = getchar())) {
         // let's store the first letter.
@@ -23,7 +23,7 @@ int main(void)
 
         if (ch == ' ') {
             first_name_len = i;
-            printf("\r");
+            printf("\r"); // carriage return to bring the cursor at the beginning so as to start printing second name.
         }
         else {
             if (ch == '\n') {
@@ -31,15 +31,11 @@ int main(void)
 
                 // placebo fix ..
                 second_name_len = i - first_name_len;
-
-
-                //!\ next fix .. how do we deal with extra spaces..
-
                 for (int m = 0; m < (first_name_len - second_name_len) + 2; m++) {
                     printf(" ");
                 }
-
                 break; //end loop.
+                //!\ next fix .. how do we deal with extra spaces..
             } else {
                 printf("%c", ch);
             }

@@ -1,3 +1,7 @@
+/* more clear and improved version of name.c */
+// Improvements: it is more clear and handles graciously extra spaces.
+// be it at the beginning of first name, in the middle (bt 2names) and at the end of last name.
+
 #include <stdio.h>
 #include <ctype.h>
 
