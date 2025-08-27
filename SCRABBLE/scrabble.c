@@ -27,9 +27,15 @@ int main (void)
                 value = 8; break;
             case 'Q': case 'Z':
                 value = 10; break;
-            default: ; break; // we do nothing.
+            default: goto end; // quickly jump to the end to check next letter.
+            // why use goto ? bcz: using break wouldn't stop the program to execute sum+= value
+            // which is undesirable becuase we want to add value to sum only when its a letter
+            // plus adding value even when its not alphabet (which could happend without goto end;)
+            // -- could do us bad if the user tricked us with a number in the word..
+            // the sum would be updated with the recent value. whith goto .. we skip char that are not alhabets and prevent that trap..
         }
         sum += value;
+        end:;
     }
     printf("Scrabble value: %hd\n", sum);
 

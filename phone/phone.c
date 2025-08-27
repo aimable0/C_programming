@@ -19,7 +19,7 @@ int main(void)
             case 'P': case 'R': case 'S': letter = '7'; break;
             case 'T': case 'U': case 'V': letter = '8'; break;
             case 'W': case 'X': case 'Y': letter = '9'; break;
-            default: ; break; // the user letter is a number or a punctuation hence we don't change it.
+            default: break; // the user letter is a number or a punctuation hence we don't change it.
         }
         printf("%c", letter);
     }
