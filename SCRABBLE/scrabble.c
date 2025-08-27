@@ -1,4 +1,4 @@
-/* Program that computes */
+/* Program that computes the value of a word by summing the values of its letter as in SCRABBLE crossword Game */
 
 #include <stdio.h>
 #include <ctype.h>
