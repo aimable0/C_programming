@@ -11,9 +11,12 @@ int main(void)
     short second_name_len = 0;
     short first_name_len = 0;
 
+    // to avoid extraspace.. at the beginning 
+
     while((ch = getchar())) {
         // let's store the first letter.
         if (i == 0) {
+            while(getchar() == ' ');
             first_char = ch;
         }
         i++;
@@ -31,7 +34,7 @@ int main(void)
 
 
                 //!\ next fix .. how do we deal with extra spaces..
-                
+
                 for (int m = 0; m < (first_name_len - second_name_len) + 2; m++) {
                     printf(" ");
                 }
