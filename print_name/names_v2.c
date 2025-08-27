@@ -14,14 +14,14 @@ int main(void)
     while((ch = getchar())) {
         if (ch != ' ') {
             continue; // skip all the other letters of the first name until you get at the first space between first and second name.
-        } else {
+        } else if (ch == ' '){
             while((ch = getchar())) {
                 if (ch == ' ') {
-                    continue; // skip extra spaces between the first and second name.
+                    continue; // skip all spaces between the first and second name.
                 } else if (ch != '\n') {
-                    printf("%c", ch); // print only letters.
+                    printf("%c", ch); // print letters of second name.
                 } else if (ch == '\n') {
-                    printf(", %c.\n", first_initial); // print the first letter.
+                    printf(", %c.\n", first_initial); // print the first initial.
                     goto end;
                 }
             }
