@@ -30,7 +30,7 @@ int main(void)
                 }
             }
         }
-        end: break;
+        end: break; //!\: this will still fall through.. if it happends to be reached in execution.
     }
 
     return 0;
