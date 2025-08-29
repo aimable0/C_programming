@@ -37,21 +37,109 @@ int main(void)
     int time = (hr * 60) + min;
 
     if (departure_1 >= time || (time - departure_1) < (departure_2 - time)) {
-        printf("Closest departure is departure_1\n");
+        // Displaying Departure in 12-hr format
+        if (departure_1 / 60 > 12) {
+            printf("Closest departure time is %d:%.2d p.m., ", (departure_1 / 60) - 12, (departure_1 % 60));
+        } else {
+            printf("Closest departure time is %d:%.2d a.m., ", (departure_1 / 60), (departure_1 % 60));
+        }
+        // Displaying Arrival in 12-hr format
+        if (arrival_1 / 60 > 12) {
+            printf("arriving at %d:%.2d p.m.\n",(arrival_1 / 60) - 12, (arrival_1 % 60));
+        } else {
+            printf("arriving at %d:%.2d a.m.\n",(arrival_1 / 60), (arrival_1 % 60));
+        }
     } else if (departure_2 >= time || (time - departure_2) < (departure_3 - time)) {
-        printf("Closest departure is departue_2\n");
+        // Displaying Departure in 12-hr format
+        if (departure_2 / 60 > 12) {
+            printf("Closest departure time is %d:%.2d p.m., ", (departure_2 / 60) - 12, (departure_2 % 60));
+        } else {
+            printf("Closest departure time is %d:%.2d a.m., ", (departure_2 / 60), (departure_2 % 60));
+        }
+        // Displaying Arrival in 12-hr format
+        if (arrival_2 / 60 > 12) {
+            printf("arriving at %d:%.2d p.m.\n",(arrival_2 / 60) - 12, (arrival_2 % 60));
+        } else {
+            printf("arriving at %d:%.2d a.m.\n",(arrival_2 / 60), (arrival_2 % 60));
+        }
     } else if (departure_3 >= time || (time - departure_3) < (departure_4 - time)) {
-        printf("Closest departure is departue_3\n");
+        // Displaying Departure in 12-hr format
+        if (departure_3 / 60 > 12) {
+            printf("Closest departure time is %d:%.2d p.m., ", (departure_3 / 60) - 12, (departure_3 % 60));
+        } else {
+            printf("Closest departure time is %d:%.2d a.m., ", (departure_3 / 60), (departure_3 % 60));
+        }
+        // Displaying Arrival in 12-hr format
+        if (arrival_3 / 60 > 12) {
+            printf("arriving at %d:%.2d p.m.\n",(arrival_3 / 60) - 12, (arrival_3 % 60));
+        } else {
+            printf("arriving at %d:%.2d a.m.\n",(arrival_3 / 60), (arrival_3 % 60));
+        }
     } else if (departure_4 >= time || (time - departure_4) < (departure_5 - time)) {
-        printf("Closest departure is departue_4\n");
+        // Displaying Departure in 12-hr format
+        if (departure_4 / 60 > 12) {
+            printf("Closest departure time is %d:%.2d p.m., ", (departure_4 / 60) - 12, (departure_4 % 60));
+        } else {
+            printf("Closest departure time is %d:%.2d a.m., ", (departure_4 / 60), (departure_4 % 60));
+        }
+        // Displaying Arrival in 12-hr format
+        if (arrival_4 / 60 > 12) {
+            printf("arriving at %d:%.2d p.m.\n",(arrival_4 / 60) - 12, (arrival_4 % 60));
+        } else {
+            printf("arriving at %d:%.2d a.m.\n",(arrival_4 / 60), (arrival_4 % 60));
+        }
     } else if (departure_5 >= time || (time - departure_5) < (departure_6 - time)) {
-        printf("Closest departure is departue_5\n");
+        // Displaying Departure in 12-hr format
+        if (departure_5 / 60 > 12) {
+            printf("Closest departure time is %d:%.2d p.m., ", (departure_5 / 60) - 12, (departure_5 % 60));
+        } else {
+            printf("Closest departure time is %d:%.2d a.m., ", (departure_5 / 60), (departure_5 % 60));
+        }
+        // Displaying Arrival in 12-hr format
+        if (arrival_5 / 60 > 12) {
+            printf("arriving at %d:%.2d p.m.\n",(arrival_5 / 60) - 12, (arrival_5 % 60));
+        } else {
+            printf("arriving at %d:%.2d a.m.\n",(arrival_5 / 60), (arrival_5 % 60));
+        }
     } else if (departure_6 >= time || (time - departure_6) < (departure_7 - time)) {
-        printf("Closest departure is departue_6\n");
+        // Displaying Departure in 12-hr format
+        if (departure_6 / 60 > 12) {
+            printf("Closest departure time is %d:%.2d p.m., ", (departure_6 / 60) - 12, (departure_6 % 60));
+        } else {
+            printf("Closest departure time is %d:%.2d a.m., ", (departure_6 / 60), (departure_6 % 60));
+        }
+        // Displaying Arrival in 12-hr format
+        if (arrival_6 / 60 > 12) {
+            printf("arriving at %d:%.2d p.m.\n",(arrival_6 / 60) - 12, (arrival_6 % 60));
+        } else {
+            printf("arriving at %d:%.2d a.m.\n",(arrival_6 / 60), (arrival_6 % 60));
+        }
     } else if (departure_7 >= time || (time - departure_7) < (departure_8 - time)) {
-        printf("Closest departure is departue_7\n");
+        // Displaying Departure in 12-hr format
+        if (departure_7 / 60 > 12) {
+            printf("Closest departure time is %d:%.2d p.m., ", (departure_7 / 60) - 12, (departure_7 % 60));
+        } else {
+            printf("Closest departure time is %d:%.2d a.m., ", (departure_7 / 60), (departure_7 % 60));
+        }
+        // Displaying Arrival in 12-hr format
+        if (arrival_7 / 60 > 12) {
+            printf("arriving at %d:%.2d p.m.\n",(arrival_7 / 60) - 12, (arrival_7 % 60));
+        } else {
+            printf("arriving at %d:%.2d a.m.\n",(arrival_7 / 60), (arrival_7 % 60));
+        }
     } else {
-        printf("Closest departure is departue_8\n");
+        // Displaying Departure in 12-hr format
+        if (departure_8 / 60 > 12) {
+            printf("Closest departure time is %d:%.2d p.m., ", (departure_8 / 60) - 12, (departure_8 % 60));
+        } else {
+            printf("Closest departure time is %d:%.2d a.m., ", (departure_8 / 60), (departure_8 % 60));
+        }
+        // Displaying Arrival in 12-hr format
+        if (arrival_8 / 60 > 12) {
+            printf("arriving at %d:%.2d p.m.\n",(arrival_8 / 60) - 12, (arrival_8 % 60));
+        } else {
+            printf("arriving at %d:%.2d a.m.\n",(arrival_8 / 60), (arrival_8 % 60));
+        }
     }
 
     return 0;
