@@ -48,7 +48,8 @@ int main(void)
     if (toupper(time_indicator) == 'A') {
         time = (hr * 60) + min;
     } else {
-        time = (hr + 12) * 60 + min;
+        // time = (hr + 12) * 60 + min; // this would not handle 12:00pm correctly
+        time = ((hr == 12) ? 12 : (hr + 12)) * 60 + min;
     }
 
     if (departure_1 >= time || (time - departure_1) < (departure_2 - time)) {

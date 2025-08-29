@@ -1,3 +1,6 @@
+
+/* Program prompts the user to enter two dates and then indicates which date comes earlier on the the calendar */
+
 #include <stdio.h>
 
 int main(void)

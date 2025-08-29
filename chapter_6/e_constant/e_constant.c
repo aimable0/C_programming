@@ -1,10 +1,10 @@
-/* Write a program that approximates e by computing the value of */
+/* Write a program that approximates e by computing the value of 1 + 1/1! + 1/2! + 1/3! + ..... 1/n! */
 
 #include <stdio.h>
 
 int main(void)
 {
-    // formular: e = 1 + 1/1! + 1/2! + 1/3!
+    // formular: e = 1 + 1/1! + 1/2! + 1/3! + ..... 1/n!
     // n! (n factorial) = n \times (n-1) x (n-2) x ... x 1
 
     double factorial = 1.0f;

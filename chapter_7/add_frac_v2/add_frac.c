@@ -1,4 +1,4 @@
-/* gets fraction from user and does some arthmetic. */
+/* gets fraction from user and does some arthmetic + - * /. */
 
 #include <stdio.h>
 
