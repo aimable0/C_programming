@@ -3,5 +3,9 @@
 
 int main(void)
 {
+    int hr, min;
+    char time_indicator;
     printf("Enter a 12-hour time: ");
+    
+
 }
