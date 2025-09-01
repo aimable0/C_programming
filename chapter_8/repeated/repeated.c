@@ -1,37 +1,28 @@
-/* we are going to use another approach to check for repeated numbers.. */
+/* Improved version of repeated_digits.c program */
+/* Note: This is only possible with C99 standard version */
+
 #include <stdio.h>
 #include <stdbool.h>
 
 int main(void)
 {
-    int digit_seen[10] = {false}; //false
-    int n = 0;
+    bool digit_seen[10] = {false}; // all elements are set to value = false
+    long number;
     printf("Enter a number: ");
-    scanf("%d", &n);
+    scanf("%ld", &number);
 
-
-
-    digit_seen[n] = true;
-    int i = 1;
-    int checker = 0;
-    while(i > 0) {
-        printf("n = %d \n", n + 1);
-        scanf("%1d", &n);
+    int n = number % 10;
+    while(number != 0) {
         if (digit_seen[n] == true) {
-            printf("HAS DUPLICATES\n");
+            printf("Repeated digit\n");
             goto end;
-        } else if (n >= 0 && n < 10) {
+        } else {
             digit_seen[n] = true;
-            printf("Got here with %d\n - checker: %d", n, checker);
-            i = 1;
+            number = (number - (number % 10)) / 10;
+            n = number % 10;
         }
-        else {
-            i = 0;
-        }
-        checker++;
-
     }
-    printf("HAS NO DUPLICATES\n");
+    printf("No repeated digit\n");
 
     end: return 0;
 }
