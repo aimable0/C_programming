@@ -4,18 +4,38 @@
 int main(void)
 {
 
-    int rate, years;
-    int capital = CAPITAL;
-    printf("Enter interest: ");
+    float amount_with_interest;
+    float capital = 100.00;
+    int years;
+    int rate;
+
+    printf("Enter interest rate: ");
     scanf("%d", &rate);
     printf("Enter a number of years: ");
     scanf("%d", &years);
 
     // Let's do it for the constant rate
+    float amounts[years];
 
-    int interest = capital * rate;
-    interest =
-    printf("Years\t6%%\n");
-    printf("  %d  \n", years--);
+    printf("Years\t  %d%%\t  %d%%\t  %d%%\t  %d%%\t  %d%%\n", rate, rate + 1, rate + 2, rate + 3, rate + 4);
+    for(int m = 1; m < years + 1; m++){
+        printf("  %d\t", m);
+        if (m == 1) {
+            for (int i = 0; i < 5; i++) {
 
+                amount_with_interest = capital + (capital * ((rate + i) / 100.00));
+                amounts[i] = amount_with_interest;
+                printf("%.2f\t",amount_with_interest);
+            }
+        } else {
+            for(int i = 0; i < years; i++) {
+                amount_with_interest = amounts[i] + (amounts[i] * ((rate + i) / 100.00));
+                amounts[i] = amount_with_interest;
+                printf("%.2f\t",amount_with_interest);
+            }
+        }
+        printf("\n");
+    }
+
+    return 0;
 }
