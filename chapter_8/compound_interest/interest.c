@@ -17,18 +17,23 @@ int main(void)
     // Let's do it for the constant rate
     float amounts[years];
 
-    printf("Years\t  %d%%\t  %d%%\t  %d%%\t  %d%%\t  %d%%\n", rate, rate + 1, rate + 2, rate + 3, rate + 4);
-    for(int m = 1; m < years + 1; m++){
+    printf("Years\t");
+    for (int i = 1, cpy_rate = rate; i <= years; i++, cpy_rate++) {
+        printf("  %d%%\t", cpy_rate);
+    }
+    printf("\n");
+
+    for (int m = 1; m < years + 1; m++){
         printf("  %d\t", m);
         if (m == 1) {
-            for (int i = 0; i < 5; i++) {
+            for (int i = 0; i < years; i++) {
 
                 amount_with_interest = capital + (capital * ((rate + i) / 100.00));
                 amounts[i] = amount_with_interest;
                 printf("%.2f\t",amount_with_interest);
             }
         } else {
-            for(int i = 0; i < years; i++) {
+            for (int i = 0; i < years; i++) {
                 amount_with_interest = amounts[i] + (amounts[i] * ((rate + i) / 100.00));
                 amounts[i] = amount_with_interest;
                 printf("%.2f\t",amount_with_interest);
