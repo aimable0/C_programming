@@ -21,7 +21,7 @@ int main(void)
 
 
     // array to store the numbers
-    int a[size];
+    int a[size];  // an example of C99(only)'s variable-length array
     int last_digit; // current lastdigit
     int i = 0;
     while(number != 0) {
