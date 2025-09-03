@@ -9,15 +9,23 @@ int main(void)
 
     printf("Enter a number: ");
     scanf("%ld", &n);
-    int i = 0;
+
     while (n > 0) {
         digit = n % 10;
-        if (digit_seen[digit]) {
+        if (digit_seen[digit])
+            goto getnewnumber;
 
-        }
         digit_seen[digit] = true;
-        n /= 10;
+        getnewnumber: n /= 10;
     }
+
+    // print repeated digits
+    printf("Repeated digits: ");
+    for (int i  = 0; i < 10; i++) {
+        if (digit_seen[i])
+            printf("%d ", i);
+    }
+
     printf("\n");
 
     return 0;
