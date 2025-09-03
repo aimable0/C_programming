@@ -9,19 +9,16 @@ int main(void)
 
     printf("Enter a number: ");
     scanf("%ld", &n);
-
+    int i = 0;
     while (n > 0) {
         digit = n % 10;
-        if (digit_seen[digit])
-            break;
+        if (digit_seen[digit]) {
+
+        }
         digit_seen[digit] = true;
         n /= 10;
     }
-
-    if (n > 0)
-        printf("Repeated digit\n");
-    else
-        printf("No repeated digit\n");
+    printf("\n");
 
     return 0;
 }
