@@ -1,3 +1,4 @@
+/* Recieves a series of number from a user and reverses them */
 #include <stdio.h>
 
 #define LENGTH (int) ( sizeof(a) / sizeof(a[0]))

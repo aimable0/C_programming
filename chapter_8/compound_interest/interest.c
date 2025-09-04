@@ -1,3 +1,4 @@
+/* Displays a table of interest of a capital of 100 over 5 years with different rates. */
 #include <stdio.h>
 #define CAPITAL 100
 

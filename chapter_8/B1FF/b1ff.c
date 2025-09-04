@@ -1,3 +1,5 @@
+/* Write a “B1FF filter” that reads a message entered by the user and translates it into B1FF-speak */
+
 #include <stdio.h>
 #include <ctype.h>
 #define ROW 2
