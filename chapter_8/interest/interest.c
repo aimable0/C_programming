@@ -1,4 +1,6 @@
 /* A program that compounds interest monthly instead of annually */
+// works but not the best appraoch
+
 #include <stdio.h>
 #define CAPITAL 100
 
