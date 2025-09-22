@@ -15,3 +15,7 @@ int add(int a, int b)
     int added = a + b;
     return added;
 }
+
+
+&& (row != 9 && (col -1) != 9)
+block also move from right .. and left from one col to ther other on edges
