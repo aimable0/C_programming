@@ -3,7 +3,34 @@
 
 #include <stdio.h>
 
+
+int gcd(int, int);
+
 int main(void)
 {
-    printf("Hello, world\n");
+    // test our gcd
+    int a, b;
+    a = 12;
+    b = 28;
+    printf("greatest common divisor: %d\n", gcd(a, b));
 }
+
+int gcd(int m, int n)
+{
+    int remainder;
+
+    // using recursion ..
+    // if (n == 0)
+    //     return m;
+    // else
+    //     return gcd(n, m % n);
+
+    // using a loop: since recursion in this case is really not the best efficient way
+    while(n != 0) {
+        remainder = m % n;
+        m = n;
+        n = remainder;
+    }
+    return m;
+}
+
