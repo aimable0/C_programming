@@ -25,12 +25,6 @@ double median(double x, double y, double z)
         y = temp;
     }
 
-    if (z < x) {
-        temp = x;
-        x = z;
-        z = temp;
-    }
-
     if (x > y) {
         temp = y;
         y = x;
