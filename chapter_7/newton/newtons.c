@@ -29,5 +29,5 @@ int main(void)
     } else {
         printf("Square root: %.0f\n", new_y);
     }
-    printf("sample: %f\n", 1e-9);
+    // printf("sample: %f\n", 1e-9);
 }
