@@ -50,18 +50,14 @@ int main(void)
             col = 0;
 
         // step 3 - check cell availability
-        if (occupied[row][col] == false)
-        {
-            array[row][col] = number;
-            occupied[row][col] = true;
-        }
-        else
+        if (occupied[row][col])
         {
             row = temp_row + 2;
             col = temp_col - 1;
-            array[row][col] = number;
-            occupied[row][col] = true;
         }
+
+        array[row][col] = number;
+        occupied[row][col] = true;
     }
 
     // check if valid magic square..
