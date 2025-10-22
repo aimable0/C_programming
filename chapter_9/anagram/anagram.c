@@ -39,8 +39,6 @@ int main(void)
  *      if the letter is 'a', index = 'a' - 'a' = 0
  *      if the letter is 'b', index = 'b' - 'a' = 1
  *
- * Note: This function assumes input contains only lowercase letters.
- *
  * Return: Nothing
  */
 void read_word(int counts[26])
