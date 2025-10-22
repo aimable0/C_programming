@@ -18,7 +18,14 @@ int main(void)
         word_one[letter - 97] += 1;
     }
 
-    printf("Enter first word: ");
+
+    // printf("Enter second word: ");
+    // char letter_1; // to use on the second word
+    // while(letter_1 != '\n') {
+    //     scanf("%c", &letter_1);
+    //     word_two[letter_1 - 97] += 1;
+    // }
+    printf("Enter second word: ");
     char letter_1; // to use on the second word
     while(letter_1 != '\n') {
         scanf("%c", &letter_1);
