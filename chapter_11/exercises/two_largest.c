@@ -8,7 +8,7 @@ int main(void)
     int second_largest;
     find_two_largest(a, 1, &largest, &second_largest);
     printf("Largest: %d and second largest: %d\n", largest, second_largest);
-    printf("a[1]: %d when a is has just one element\n", a[1]); // undefined behaviour
+    printf("a[1]: %d when a is has just one element\n", a[1]); // undefined behaviour but it may return 0.
     return 0;
 }
 
