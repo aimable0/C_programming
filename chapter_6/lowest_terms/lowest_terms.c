@@ -6,7 +6,7 @@
 int main(void)
 {
     // Algorithm used,  Euclid's
-    int m, n = 1;
+    int m, n;
     printf("Enter a fraction: ");
     scanf("%d/%d", &m, &n);
     int numerator = m;
