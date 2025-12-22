@@ -17,7 +17,7 @@ void print_result(bool *straight, bool *flush, bool *four, bool *three, int *pai
  **********************************************************/
 int main(void)
 {
-    int num_in_rank[NUM_RANKS];
+    int num_in_rank[NUM_RANKS]; 
     int num_in_suit[NUM_SUITS];
     bool straight, flush, four, three;
     int pairs; /* can be 0, 1, or 2 */

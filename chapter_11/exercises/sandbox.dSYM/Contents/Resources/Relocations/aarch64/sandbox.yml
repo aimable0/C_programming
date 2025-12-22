@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/mac/Documents/C/C_programming/chapter_11/exercises/sandbox'
+relocations:     []
+...

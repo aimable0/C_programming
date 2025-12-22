@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/aimable/Documents/C_programming/date",
-      "program": "/Users/aimable/Documents/C_programming/date/build/Debug/outDebug"
+      "cwd": "/Users/mac/Documents/C/C_programming/chapter_11/exercises",
+      "program": "/Users/mac/Documents/C/C_programming/chapter_11/exercises/build/Debug/outDebug"
     }
   ]
 }
