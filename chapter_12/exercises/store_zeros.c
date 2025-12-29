@@ -17,14 +17,14 @@
 void store_zeros(int a[], int n)
 {
     int *p = a;
-    while(p < &a[n]) {
+    while(p < a + n) {
         *p++ = 0;
     }
 }
 
 int main(void) {
     int a[LEN] = {1, 2, 3, 4, 5};
-    
+
     store_zeros(a, LEN);
     for (int i = 0; i < LEN; i++)
         printf("%d\n", a[i]);

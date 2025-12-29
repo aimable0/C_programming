@@ -14,7 +14,7 @@
 
 bool search(const int a[], int n, int key) {
     int *p = a;
-    while(p < &a[n]) {
+    while(p < a + n) {
         if (*p++ == key) return true;
     }
     return false;
@@ -22,7 +22,7 @@ bool search(const int a[], int n, int key) {
 
 int main(void) {
     int a[SIZE] = {1, 2, 3, 4, 5};
-    int key = 6;
+    int key = 3;
     bool found = search(a, SIZE, key);
-    printf("%s\n", found == true ? "true" : "false");
+    printf("%s\n", found ? "true" : "false");
 }
