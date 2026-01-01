@@ -15,7 +15,8 @@
 bool search(const int a[], int n, int key) {
     int *p = a;
     while(p < a + n) {
-        if (*p++ == key) return true;
+        if (*p == key) return true;
+        p++;
     }
     return false;
 }
