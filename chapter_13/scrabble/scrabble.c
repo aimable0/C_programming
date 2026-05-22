@@ -24,7 +24,7 @@ int compute_scrabble_value(const char *word)
                 value += 8; break;
             case 'Q': case 'Z':
                 value += 10; break;
-            default: continue;
+            default:;
         }
         word++;
     }

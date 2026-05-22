@@ -26,7 +26,7 @@ int main (void)
                 value += 8; break;
             case 'Q': case 'Z':
                 value += 10; break;
-            default: continue;
+            default:;
         }
     }
     printf("Scrabble value: %hd\n", value);
