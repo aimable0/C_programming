@@ -7,9 +7,8 @@
 int compute_scrabble_value(const char *word)
 {
     int value = 0;
-    char ch;
-    while((ch = *word++)) {
-        switch (toupper(ch)) {
+    while(*word) {
+        switch (toupper(*word)) {
             case 'A': case 'E': case 'I':case 'L': case 'N':
             case 'O': case 'R': case 'S': case 'T': case 'U':
                 value += 1; break;
@@ -25,8 +24,9 @@ int compute_scrabble_value(const char *word)
                 value += 8; break;
             case 'Q': case 'Z':
                 value += 10; break;
-            default:;
+            default: continue;
         }
+        word++;
     }
     return value;
 }
