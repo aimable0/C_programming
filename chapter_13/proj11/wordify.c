@@ -36,21 +36,26 @@ int main(void)
         "seventeen",
         "eighteen",
         "nineteen",
+        "twenty-",
+        [30] = "thirty-",
+        [40] = "forty-",
+        [50] = "fifty-",
+        [60] = "sixty-",
+        [70] = "seventy-",
+        [80] = "eighty-",
+        [90] = "ninty",
     };
-    char *prefix[] = {
-        "", "", "twenty-", "thirty-", "forty-", "sixty-", "seventy-", "eighty-", "ninty-"};
 
     printf("You entered the number ");
     if (num < 20)
     {
-        printf("%s", numbers[num]);
+        printf("%s\n", numbers[num]);
     }
     else
     {
-        printf("%s", prefix[tens_num / 10]);
-        printf("%s", numbers[ones_num]);
+        printf("%s", numbers[tens_num]);
+        printf("%s\n", numbers[ones_num]);
     }
-    printf("\n");
 
     return 0;
 }
