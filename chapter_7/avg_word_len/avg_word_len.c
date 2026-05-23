@@ -25,7 +25,7 @@ int main(void)
             tot_letters++;
         }
     }
-
+    printf("tot_letters: %hd - spaces: %hd\n", tot_letters, spaces);
     printf("Average word length: %.1f\n", (float) (tot_letters) / (spaces + 1));
 
     return 0;
