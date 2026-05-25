@@ -61,7 +61,7 @@ int main(void)
     for (int k = 0; k < words; k++)
         printf("%s ", sentence_words[k]);
     printf("\n\n");
-
+ 
     printf("Sentence reverse: ");
 
     // handle store punctuation.
